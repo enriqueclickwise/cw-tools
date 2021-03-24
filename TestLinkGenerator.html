@@ -1,0 +1,78 @@
+<!-- Para hacer un pixel 
+
+Author: @emunoz
+Date: 2018-08-03
+Company: Clickwise
+
+-->
+
+<html>
+    <head>
+        <script>
+            function copyToClipboard() {
+                var copyText = document.getElementById("finalurl");
+                copyText.select();
+                document.execCommand("copy");
+            }
+            function createTestLink()
+            {
+                var affiliateid = document.getElementById("AffiliateID").value;
+                var bannerid = document.getElementById("BannerID").value;
+                var extradata = document.getElementById("ExtraData").value;
+                if (bannerid != ''){
+                    if(extradata == ''){
+                        var url = 'https://r.clickwise.net/click/' + bannerid + '/' + affiliateid;
+                        document.getElementById("textarea").innerHTML = '<textarea class="form-control form-group col-xs-4" id="finalurl">'+ url +'</textarea><button class="btn btn-success" onclick="copyToClipboard()">Copy!</button>';
+                    }
+                    else{
+                        var url = 'https://r.clickwise.net/click/' + bannerid + '/' + affiliateid + '?data1=' + extradata;
+                        document.getElementById("textarea").innerHTML = '<textarea class="form-control form-group col-xs-4" id="finalurl">'+ url +'</textarea><button class="btn btn-success" onclick="copyToClipboard()">Copy!</button>';
+                    }
+                }
+                else{
+                    alert("The banner id can't be empty. Please, set a valid value.");
+                }
+            }
+            function resetForm()
+            {
+                document.getElementById("pixelform").reset();
+            }
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="alert alert-info">
+            <strong>Info!</strong> Remember that the affiliate must be approved inside PAPs. If not, the conversions won't be generated.<br>
+            <strong>Info!</strong> Extra data param is only used when searching for specific affiliate information.<br>
+        </div>        
+        <div class="text-center">
+            <h1>MAKE YOUR OWN TEST LINK</h1>
+            <br><br>
+            <form id="pixelform" class="form-group col-md-offset-3 col-xs-12">
+                <div class="form-group col-xs-2">
+                    <label>Affiliate ID:</label>
+                    <input class="form-control" id="AffiliateID" placeholder="4f99af95c9ae7" value="4f99af95c9ae7">
+                </div>
+                <div class="form-group col-xs-2">
+                    <label>Banner ID:</label>
+                    <input class="form-control" id="BannerID">
+                </div>
+                <div class="form-group col-xs-2">
+                    <label>Extra data:</label>
+                    <input class="form-control" id="ExtraData">
+                </div>
+            </form>
+            <br><br>
+            <div class="row">
+                <button class="btn btn-danger" onclick="createTestLink()">Make Test Link</button>
+                <button class="btn btn-warning" onclick="resetForm()">Reset form</button>
+            </div>
+            <br><br>
+            <div class="row">
+                <span class = "col-md-offset-3 col-xs-6" id = 'textarea'></span>
+            </div>
+            <img src="https://www.clickwise.net/img/logoslider.png" />
+        </div>
+    </body>
+</html>
+

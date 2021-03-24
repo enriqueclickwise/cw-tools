@@ -1,0 +1,321 @@
+<!-- To make custom tracking URLs
+
+Author: @emunoz
+Date: 2021-03-12
+Company: Clickwise
+
+-->
+
+<html>
+    <head>
+        <script>
+            // When the user clicks on div, open the popup
+            function PopupShow(popupname) {
+                var popup = document.getElementById(popupname);
+                popup.classList.toggle("show");
+            }
+            function resetForm()
+            {
+                document.getElementById("s2sform").reset();
+            }
+            function copyToClipboard() {
+                var copyText = document.getElementById("finalurl");
+                copyText.select();
+                document.execCommand("copy");
+            }
+            function addZero(i) {
+                if (i < 10) {
+                    i = '0' + i;
+                }
+                return i;
+            }
+            function createUrl()
+            {
+                function checkValue(param, value, deletedparam){
+                    if(param == value){
+                        var paramindex = check.indexOf(deletedparam);
+                        check.splice(paramindex, 1);
+                        data.splice(paramindex, 1);
+                    }
+                }
+                var actioncodelead = 'lead';
+                var country = document.getElementById("CountryCode").value.trim();
+                var codecommission = document.getElementById("CodeCommission").value;
+                var totalcost = document.getElementById("TotalCost").value;
+                var orderid = document.getElementById("OrderID").value;
+                var campaignid = document.getElementById("CampaignID").value;
+                var affiliate = document.getElementById("RefID").value;
+                var date = document.getElementById("Date").value;
+                var datecheckbox = document.getElementById("DateCheckBox").checked;
+                var currency = document.getElementById("Currency").value;
+                var extradata = document.getElementById("ExtraData").value;
+                var tid = document.getElementById("TrackingID").value;
+                if(isNaN(codecommission)){
+                    var actioncode = codecommission;
+                    if(actioncode.indexOf(actioncodelead) != -1){
+                        totalcost = '0.00';
+                    }
+                }
+                else{
+                    var actioncode = 'default';
+                    var commission = codecommission;
+                    if(commission == ''){
+                        commission = '{commission}';
+                        // alert("Commission/Action Code must be filled with a valid value! Please, check your commission/action code field for validation.");
+                    }
+                }
+                if(tid != ''){
+                    affiliate = '';
+                    extradata = '';
+                    country = '';
+                }
+                if(date == ''){
+                    var date = new Date();
+                    var dd = date.getUTCDate();
+                    var mm = date.getUTCMonth();
+                    var yyyy = date.getUTCFullYear();
+                    var hh = date.getUTCHours();
+                    var ms = date.getUTCMinutes();
+                    var ss = date.getUTCSeconds();
+                    dd = addZero(dd);
+                    mm = addZero(mm);
+                    date = yyyy + '-' + mm + '-' + dd + '.' + hh + ':' + ms + ':' + ss;
+                }
+                if(datecheckbox == true){
+                    date = '';
+                }
+                var check = [
+                    totalcost,
+                    commission,
+                    affiliate,
+                    date,
+                    country,
+                    currency,
+                    extradata,
+                    tid
+                ];
+                var data = [
+                    'total-cost=' + totalcost,
+                    'commission=' + commission,
+                    'affiliate=' + affiliate,
+                    'date=' + date,
+                    'country=' + country,
+                    'currency=' + currency,
+                    'extradata=' + extradata,
+                    'tid=' + tid
+                ];
+                checkValue(totalcost, undefined, totalcost);
+                checkValue(commission, undefined, commission);
+                checkValue(affiliate, '', affiliate);
+                checkValue(date, '', date);
+                checkValue(country, '', country);
+                checkValue(actioncode, undefined, actioncode);
+                checkValue(actioncode, actioncodelead, currency);
+                checkValue(tid, '', tid);
+                checkValue(extradata, '', extradata);
+                var params = data.join('&amp;');
+                var url = 'https://r.clickwise.net/t/'+ campaignid +'/'+ actioncode +'/'+ orderid +'?' + params;
+                document.getElementById("textarea").innerHTML = '<textarea class="form-control form-group col-xs-4" id="finalurl">'+ url +'</textarea><button class="btn btn-success" onclick="copyToClipboard()">Copy!</button>';
+            }
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .info-badge{
+                background-color: #32C3CF;
+            }
+            .warning-badge{
+                background-color: #FF0000;
+            }
+            /* Popup container - can be anything you want */
+            .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+
+            /* The actual popup */
+            .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            }
+
+            /* Popup arrow */
+            .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+            }
+
+            /* Toggle this class - hide and show the popup */
+            .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            }
+
+            /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+            }
+
+            @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>MAKE YOUR OWN TRACKING URL</h1>
+            <br><br><br>
+            <form id="s2sform" class="form-group col-xs-12">
+                <div class = "form-group col-xs-12 col-lg-offset-1">
+                    <div class="form-group col-xs-2">
+                        <label>Campaign ID:</label>
+                        <div class="popup" onclick="PopupShow('myPopup1')">
+                            <span class="badge warning-badge">!</span>
+                            <span class="popuptext" id="myPopup1">This param is required and must be filled with some value</span>
+                        </div>
+                        <input class="form-control" id="CampaignID" value="{campaignid}">
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>OrderID:</label>
+                        <div class="popup" onclick="PopupShow('myPopup2')">
+                            <span class="badge warning-badge">!</span>
+                            <span class="popuptext" id="myPopup2">This param is required and must be filled with some value</span>
+                        </div>
+                        <input class="form-control" id="OrderID" value="{orderid}">
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Total Cost:</label>
+                        <div class="popup" onclick="PopupShow('myPopup3')">
+                            <span class="badge warning-badge">!</span>
+                            <span class="popuptext" id="myPopup3">This param is required and must be filled with some value</span>
+                        </div>
+                        <input class="form-control" id="TotalCost" value="{totalcost}">
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Action Code/Commission:</label>
+                        <div class="popup" onclick="PopupShow('myPopup4')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup4">Setted dynamically.<br> Default value: <strong>"default" and "{commission}"</strong></span>
+                        </div>
+                        <input class="form-control" id="CodeCommission" placeholder="0.00 or {actioncode}">
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Affiliate ID:</label>
+                        <div class="popup" onclick="PopupShow('myPopup5')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup5">If empty removes the param from final tracking URL</span>
+                        </div>
+                        <input class="form-control" id="RefID" value="4f99af95c9ae7">
+                    </div>
+                </div>
+                <div class = "form-group col-xs-12 col-lg-offset-1">
+                    <div class="form-group col-xs-2">
+                        <label>Date:</label>
+                        <div class="popup" onclick="PopupShow('myPopup6')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup6">If empty gets the actual UTC date value in this format YYY-mm-dd.hh:ms:ss</span>
+                        </div>
+                        <input class="form-check-input" type="checkbox" value="" id="DateCheckBox">
+                        <label class="form-check-label">Remove from URL</label>
+                        <input class="form-control" id="Date" placeholder="2021-01-01.00:59:59" value="{transactiondate}">
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Country Code:</label>
+                        <div class="popup" onclick="PopupShow('myPopup7')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup7">If empty removes the param from final tracking URL</span>
+                        </div>
+                        <input class="form-control" id="CountryCode" value="{country}">
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Currency:</label>
+                        <div class="popup" onclick="PopupShow('myPopup8')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup8">If action code is <strong>"lead"</strong>, param is removed from final tracking URL<br></span>
+                        </div>
+                        <select class="form-control" id="Currency">
+                            <option value="{currency}" selected="selected">{currency}</option>
+                            <option value="USD">United States Dollars</option>
+                            <option value="EUR">Euro</option>
+                            <option value="GBP">United Kingdom Pounds</option>
+                            <option value="BRL">Brazil Real</option>
+                            <option value="CNY">China Yuan Renmimbi</option>
+                            <option value="HKD">Hong Kong Dollars</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Extra Data:</label>
+                        <div class="popup" onclick="PopupShow('myPopup9')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup9">If empty removes the param from final tracking URL</span>
+                        </div>
+                        <input class="form-control" id="ExtraData" value="{extra_data}"/>
+                    </div>
+                    <div class="form-group col-xs-2">
+                        <label>Tracking Id:</label>
+                        <div class="popup" onclick="PopupShow('myPopup10')">
+                            <span class="badge info-badge">?</span>
+                            <span class="popuptext" id="myPopup10">If empty removes the param from final tracking URL</span>
+                        </div>
+                        <input class="form-control" id="TrackingID" value="{tid}"/>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <button class="btn btn-primary" onclick="createUrl()">Make URL</button>
+                <button class="btn btn-warning" onclick="resetForm()">Reset form</button>
+            </div>
+            <br><br>
+            <div class="row">
+                <span class = "col-md-offset-2 col-xs-8" id = 'textarea'></span>
+            </div>
+            <img src="https://www.clickwise.net/img/logoslider.png" />
+        </div>
+        <div class="alert alert-success col-sm-5">
+            <strong>Extra query parameters accepted by tracking URL:</strong><br><br>
+            <dl class="row">
+                <dt class="col-sm-2">- {referer}</dt>
+                <dd class="col-sm-3">Referer string for transaction *Optional.</dd>
+                <dd>E.g: ...&referer=https%3A%2F%2Fwww.google.es%2F</dd>
+            </dl>
+            <dl class="row">
+                <dt class="col-sm-2">- {sandbox}</dt>
+                <dd class="col-sm-3">Development flag to avoid tracking wrong transactions. *Optional</dd>
+                <dd>E.g: ...&sandbox=true</dd>
+            </dl>
+        </div>
+        <div class="alert alert-info col-sm-5 col-lg-offset-2">
+            <strong>Extra path parameters accepted by tracking URL:</strong><br><br>
+            <dl class="row">
+                <dt class="col-sm-2">- {sub-order-id}</dt>
+                <dd class="col-sm-3">Number from 0 to n for sub actions *Optional</dd>
+                <dd>Structure: .../t/{campaign-id}/{action-code}/{order-id}/{sub-order-id}<br>E.g: r.clickwise.net/t/{campaign-id}/{action-code}/{order-id}/1</dd>
+            </dl>
+        </div>
+
+    </body>
+</html>
+
