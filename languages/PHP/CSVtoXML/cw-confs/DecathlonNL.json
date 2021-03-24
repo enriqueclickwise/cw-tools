@@ -1,0 +1,11 @@
+{
+    "id" : "id",
+    "price" : "price",
+    "lastprice" : "shipping_price",
+    "name" : "Name",
+    "brand" : "manufacturer",
+    "description" : "description",
+    "image" : "image_link",
+    "url" : "link",
+    "category" : "categorypath"
+}

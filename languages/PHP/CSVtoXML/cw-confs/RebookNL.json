@@ -1,0 +1,11 @@
+{
+    "id" : "Product ID",
+    "price" : "Product Value",
+    "lastprice" : "old_price",
+    "name" : "Product Name",
+    "brand" : "brand",
+    "description" : "Description",
+    "image" : "Product Image URL",
+    "url" : "Product URL",
+    "category" : "Product Category"
+}

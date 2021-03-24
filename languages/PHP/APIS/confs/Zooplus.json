@@ -1,0 +1,19 @@
+[  
+   {  
+      "accountid":"286469",
+      "accountname":"soledad@clickwise.net",
+      "token":"0d60e3b3-8d31-4bde-8c00-949c9d839bab",
+      "campaigns":  [
+                        {  
+                            "campaignid":"8287157e",
+                            "merchantid":"",
+                            "merchantname":"Zooplus",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [
+                                            ]
+                        }
+                    ]
+   }
+]

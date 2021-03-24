@@ -1,0 +1,22 @@
+{
+   "name":"📺 TV DIRECTO",
+   "author":"chechumr",
+   "image":"https://images.vexels.com/media/users/3/128877/isolated/preview/b012e0730a5f9c0c4566d887bbed95d1-icono-de-televisi--n-plana-by-vexels.png",
+   "info":"LOREM IPSUM",
+   "url":"https://w3ubin.com/EJyG9lYpe.w3u",
+   "groups":[
+      {
+         "name":"Nacionales",
+         "image":"https://images-na.ssl-images-amazon.com/images/I/61nSDUmkQBL.png",
+         "info":"",
+         "stations":[
+            {
+               "name":"TVE",
+               "image":"https://img2.freepng.es/20181125/uaj/kisspng-logo-tve-internacional-la-1-rtve-tve-hd-5bfae49e01bb39.8822497515431691820071.jpg",
+               "url":"https://www.rtve.es/directo/la-1/",
+               "embed":true
+            }
+         ]
+      }
+   ]
+}

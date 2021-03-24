@@ -1,0 +1,11 @@
+{
+    "id" : "TDProductId",
+    "price" : "price",
+    "lastprice" : "price",
+    "name" : "name",
+    "brand" : "brand",
+    "description" : "description",
+    "image" : "imageUrl",
+    "url" : "advertiserProductUrl",
+    "category" : "merchantCategoryName"
+}

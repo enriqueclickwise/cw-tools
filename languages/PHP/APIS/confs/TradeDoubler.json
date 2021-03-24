@@ -1,0 +1,175 @@
+[  
+   {  
+      "accountid":"2157135",
+      "accountname":"carolina@clickwise.net",
+      "token":"2aefd3aac2b5e0c1920b5e685b7fad8a",
+      "campaigns":  [
+                        {  
+                            "campaignid":"0fe9c4fc",
+                            "merchantid":"",
+                            "merchantname":"Yoox ES & MENA",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [
+                                            ]
+                        }
+                    ]
+   },
+   {  
+    "accountid":"2015909",
+    "accountname":"soledad@clickwise.net",
+    "token":"85ee6d83255f33fa04931e9d85568fa5",
+    "campaigns":  [
+                      {  
+                          "campaignid":"24f941a2",
+                          "merchantid":"276984",
+                          "merchantname":"Pullmantur ES",
+                          "fixedactioncodes": 
+                                              {
+                                                  "lead": "355992",
+                                                  "sale": "356012"
+                                              },
+                          "affsbonus":    [
+                                          ]
+                      },
+                      {  
+                        "campaignid":"5fdc831f",
+                        "merchantid":"229716",
+                        "merchantname":"La Tostadora ES",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"1d509ac9",
+                        "merchantid":"284497",
+                        "merchantname":"Puma ES",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"99a53614",
+                        "merchantid":"283625",
+                        "merchantname":"Avis ES",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"18d8bee2",
+                        "merchantid":"77627",
+                        "merchantname":"Yves Rocher ES",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"0ef82e05",
+                        "merchantid":"242625",
+                        "merchantname":"Leroy Merlin PL",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"403ec337",
+                        "merchantid":"229227",
+                        "merchantname":"Media Markt PL",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"e97e8bda",
+                        "merchantid":"269464",
+                        "merchantname":"Abreu PT",
+                        "fixedactioncodes": 
+                                            {
+                                                "flightsexpress": "352031",
+                                                "hotelsexpress": "352029",
+                                                "flightshotelsexpress": "352027",
+                                                "flightshotels": "343987",
+                                                "flights": "343983"
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"fc4f541f",
+                        "merchantid":"195201",
+                        "merchantname":"Provident PL",
+                        "fixedactioncodes": 
+                                            {
+                                                "revenueshare": "224465"
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"2e4db19e",
+                        "merchantid":"224465",
+                        "merchantname":"Skyscanner PL",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"804c08be",
+                        "merchantid":"289664",
+                        "merchantname":"Empik PL",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"ccfc78b0",
+                        "merchantid":"270184",
+                        "merchantname":"Vangraaf PL",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"5855b411",
+                        "merchantid":"292703",
+                        "merchantname":"Zapatos.es ES",
+                        "fixedactioncodes": 
+                                            {
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    },
+                    {  
+                        "campaignid":"bd3d4cb0",
+                        "merchantid":"242338",
+                        "merchantname":"NJU Mobile PL",
+                        "fixedactioncodes": 
+                                            {
+                                                "sale": "297902"
+                                            },
+                        "affsbonus":    [
+                                        ]
+                    }
+                  ]
+ }
+]

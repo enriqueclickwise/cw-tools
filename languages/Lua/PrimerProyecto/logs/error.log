@@ -1,0 +1,3 @@
+2019/04/29 16:21:07 [alert] 3083#0: lua_code_cache is off; this will hurt performance in /home/enrique/Documentos/Repos/Codes/Lua/PrimerProyecto/nginx.conf.compiled:16
+2019/04/30 14:31:24 [alert] 8029#0: lua_code_cache is off; this will hurt performance in /home/enrique/Documentos/Repos/Codes/Lua/PrimerProyecto/nginx.conf.compiled:16
+2019/04/30 14:36:37 [alert] 8824#0: lua_code_cache is off; this will hurt performance in /home/enrique/Documentos/Repos/Codes/Lua/PrimerProyecto/nginx.conf.compiled:16

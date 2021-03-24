@@ -1,0 +1,14 @@
+{ 
+   "campaigns":[ 
+      { 
+         "campaignId":"a36df8af",
+         "merchantName":"Maxmovil",
+         "separator":"|",
+         "includedColumns": true,
+         "csvPathName":"csv/Maxmovil.csv",
+         "confName":"cw-confs/Maxmovil.json",
+         "xmlPath":"cw-xml/CW-Maxmovil.xml",
+         "active": true
+      }
+   ]
+}

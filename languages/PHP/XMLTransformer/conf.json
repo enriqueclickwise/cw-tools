@@ -1,0 +1,23 @@
+{
+	"configs" :	
+	[
+		{
+			"xmlfilename" : "files/xml/Electronicamente.xml",
+			"xslfilename" : "files/structures/full-xsltemplate.xsl",
+			"finalxmlfilename" : "files/cw-xml/CW-Electronicamente.xml",
+			"xslfinalname" : "files/cw-structures/CW-Electronicamente.xsl",
+			"xslpath" : "rss/producto",
+			"structure" : [{
+								"xslid" : "IDdelproducto",
+								"xslname" : "nombre",
+								"xsldescription" : "description",
+								"xsllink" : "deeplink",
+								"xslprice" : "precioactual",
+								"xslimage" : "imagenlink",
+								"xsllastprice" : "precioanterior",
+								"xslcategory" : "categoria_catalogate",
+								"xslbrand" : "marca"
+							}]
+		}
+	]
+}

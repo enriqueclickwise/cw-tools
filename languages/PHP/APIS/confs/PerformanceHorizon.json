@@ -1,0 +1,192 @@
+[  
+   {  
+      "accountid":"5qdYu8PwMv",
+      "accountname":"111l479",
+      "token":"On6ZGyMa",
+      "campaigns":  [
+                        {  
+                            "campaignid":"b247db7e_JP",
+                            "merchantid":"1011l37",
+                            "merchantname":"KLM Japan",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_UK",
+                            "merchantid":"10l176",
+                            "merchantname":"KLM United Kingdom",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_DE",
+                            "merchantid":"10l177",
+                            "merchantname":"KLM Germany",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_CA",
+                            "merchantid":"10l178",
+                            "merchantname":"KLM Canada",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e",
+                            "merchantid":"10l205",
+                            "merchantname":"KLM Rest of the world",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_NO",
+                            "merchantid":"11l180",
+                            "merchantname":"KLM Norway",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_ES",
+                            "merchantid":"11l181",
+                            "merchantname":"KLM Spain",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },                        {  
+                            "campaignid":"b247db7e_BR",
+                            "merchantid":"11l182",
+                            "merchantname":"KLM Brazil",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_NL",
+                            "merchantid":"1l1000036",
+                            "merchantname":"KLM Netherlands",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"b247db7e_US",
+                            "merchantid":"1l1000037",
+                            "merchantname":"KLM United States",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+   },
+   {  
+        "accountid":"kSj0SvzWdu",
+        "accountname":"1100l38685",
+        "token":"x1pvAfOr",
+        "campaigns":  [
+                        {  
+                            "campaignid":"ee8a0c03",
+                            "merchantid":"1011l242",
+                            "merchantname":"Trainline EU",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"ee8a0c03_UK",
+                            "merchantid":"1100l229",
+                            "merchantname":"Trainline UK",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+    },
+    {  
+         "accountid":"xt5modj8Yj",
+         "accountname":"1101l45820",
+         "token":"wPqL5wJY",
+         "campaigns":  [
+                         {  
+                             "campaignid":"fee78c51",
+                             "merchantid":"100l14",
+                             "merchantname":"Adidas ES",
+                             "fixedactioncodes": 
+                                                 {
+                                                 },
+                             "affsbonus":    [  
+                                             ]
+                         },
+                         {  
+                             "campaignid":"fee78c51_NL",
+                             "merchantid":"11l213",
+                             "merchantname":"Adidas NL",
+                             "fixedactioncodes": 
+                                                 {
+                                                 },
+                             "affsbonus":    [  
+                                             ]
+                         },
+                         {  
+                             "campaignid":"fee78c51_SE",
+                             "merchantid":"110l29",
+                             "merchantname":"Adidas SE",
+                             "fixedactioncodes": 
+                                                 {
+                                                 },
+                             "affsbonus":    [  
+                                             ]
+                         },
+                         {  
+                             "campaignid":"fee78c51_UK",
+                             "merchantid":"1l1000062",
+                             "merchantname":"Adidas UK",
+                             "fixedactioncodes": 
+                                                 {
+                                                 },
+                             "affsbonus":    [  
+                                             ]
+                         },
+                         {  
+                             "campaignid":"fee78c51_DK",
+                             "merchantid":"110l35",
+                             "merchantname":"Adidas DK",
+                             "fixedactioncodes": 
+                                                 {
+                                                 },
+                             "affsbonus":    [  
+                                             ]
+                         }
+                     ]
+     }
+]

@@ -1,0 +1,14 @@
+<!-- views/index.etlua -->
+
+<div class="text-center">
+    <div class="alert alert-info">
+        <strong>Info!</strong> Uploads the XML and transforms it with XSL
+    </div>
+    <h1>XML Transformer</h1>
+    <form style="padding-top: 3%;" role="form" id="pixelform" class="form-inline" method="POST" action="xmlresult" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="file" class="custom-file-input" id="rootxml" name="rootxml">
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+</div>

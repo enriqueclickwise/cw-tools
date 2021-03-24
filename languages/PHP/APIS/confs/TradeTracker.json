@@ -1,0 +1,271 @@
+[  
+    {  
+        "accountid":"264191",
+        "accountname":"Soledad Torres - TT Poland",
+        "token":"2d9be911a4cf701bec72005acfea95fb38220d64",
+        "campaigns":  [
+                            {  
+                                "campaignid":"f30d3295",
+                                "merchantid":"21658",
+                                "merchantname":"CDP PL",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]
+                            },
+                            {  
+                                "campaignid":"70cca0e6",
+                                "merchantid":"21990",
+                                "merchantname":"EGlamour PL",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]
+                            },
+                            {  
+                                "campaignid":"00310980",
+                                "merchantid":"27269",
+                                "merchantname":"E-Sporting PL",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]
+                            },
+                            {  
+                                "campaignid":"e4109f71",
+                                "merchantid":"21594",
+                                "merchantname":"Moodo PL",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]
+    
+                            },
+                            {  
+                                "campaignid":"6731dc23",
+                                "merchantid":"26698",
+                                "merchantname":"Prosto PL",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]
+                            },
+                            {  
+                                "campaignid":"a096678c",
+                                "merchantid":"13714",
+                                "merchantname":"Cyfrowe PL",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]
+                            }
+                        ]
+    },
+    {  
+        "accountid":"271466",
+        "accountname":"TT Spain",
+        "token":"d37defc2bb8ffae6a1cfdd309b056583e223a5dd",
+        "campaigns":  [
+                            {  
+                                "campaignid":"1f290e8b",
+                                "merchantid":"8483",
+                                "merchantname":"Pampling ES",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            },
+                            {  
+                                "campaignid":"73ddc1d9_ES",
+                                "merchantid":"12712",
+                                "merchantname":"Spartoo ES",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            },
+                            {  
+                                "campaignid":"f94b1aaf",
+                                "merchantid":"19831",
+                                "merchantname":"Vero Moda ES",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            },
+                            {  
+                                "campaignid":"891dda98",
+                                "merchantid":"19918",
+                                "merchantname":"Merkal ES",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            },
+                            {  
+                                "campaignid":"a82d3f7c",
+                                "merchantid":"27598",
+                                "merchantname":"PdPaola ES",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            },
+                            {  
+                                "campaignid":"ae66f859",
+                                "merchantid":"24566",
+                                "merchantname":"JaponShop ES",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            }
+                        ]
+    },
+    {  
+        "accountid":"273124",
+        "accountname":"Clickwise TT Russia",
+        "token":"c5e44c0ab3bfe3f7a675550b33ef6142641d911d",
+        "campaigns":  [
+                            {  
+                                "campaignid":"7670e3e4",
+                                "merchantid":"15011",
+                                "merchantname":"Biglion RU",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [  
+                                                ]    
+                            }
+                        ]
+    },
+    {  
+        "accountid":"302677",
+        "accountname":"TT Portugal",
+        "token":"790dcde115fd994a49e68014b01bf391c9f5af12",
+        "campaigns":  [
+                        {  
+                            "campaignid":"73ddc1d9_PT",
+                            "merchantid":"27444",
+                            "merchantname":"Spartoo PT",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+    },
+    {  
+        "accountid":"310139",
+        "accountname":"TT Sweden",
+        "token":"73a19b65192adf274836dd19663407e87e64e1a9",
+        "campaigns":  [
+                        {  
+                            "campaignid":"51c12fea",
+                            "merchantid":"12847",
+                            "merchantname":"Dustin Home SE",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"7291643a",
+                            "merchantid":"16152",
+                            "merchantname":"Unisport SE",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+    },
+    {  
+        "accountid":"289281",
+        "accountname":"TT Germany",
+        "token":"fde872f4da3bead5521c39032733c03384b1d669",
+        "campaigns":  [
+                        {  
+                            "campaignid":"34d9fbd9",
+                            "merchantid":"27655",
+                            "merchantname":"Vehiculum DE",
+                            "fixedactioncodes": 
+                                                {
+                                                    "lead": "lead",
+                                                    "sale": "sale"
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"df07b174",
+                            "merchantid":"21919",
+                            "merchantname":"Fiyo DE",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+    },
+    {  
+        "accountid":"291029",
+        "accountname":"TT France",
+        "token":"2a93c8a78084b8f7f87b65e775b34c36f035c31e",
+        "campaigns":  [
+                        {  
+                            "campaignid":"fbb7947d",
+                            "merchantid":"24080",
+                            "merchantname":"Emp-Online FR",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        },
+                        {  
+                            "campaignid":"ed2b99af",
+                            "merchantid":"16254",
+                            "merchantname":"Hema FR",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+    },
+    {  
+        "accountid":"291034",
+        "accountname":"TT United Kingdom",
+        "token":"f7a630b9d80f0fdd853775c0ffe6aebf0165e4f3",
+        "campaigns":  [
+                        {  
+                            "campaignid":"99016337",
+                            "merchantid":"16267",
+                            "merchantname":"Hema UK",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+                        }
+                    ]
+    }
+]

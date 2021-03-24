@@ -1,0 +1,68 @@
+[  
+   {  
+        "accountid":"651667",
+        "accountname":"",
+        "token":"29358313-5e74-4e3f-aa13-7a89aba9319b 534422aefd274adba07fa303d9bd9c53",
+        "campaigns":    [
+                            {  
+                                "campaignid":"3bd0fefe",
+                                "merchantid":"715876",
+                                "merchantname":"Agoda",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [
+                                                ]
+                            },
+                            {  
+                                "campaignid":"2b879a55",
+                                "merchantid":"467603",
+                                "merchantname":"Hotels.com",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [
+                                                ]
+                            },
+                            {  
+                                "campaignid":"019eb217",
+                                "merchantid":"648555",
+                                "merchantname":"Expedia",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [
+                                                ]
+                            },
+                            {  
+                                "campaignid":"406e12cf",
+                                "merchantid":"1224114",
+                                "merchantname":"Cheaptickets",
+                                "fixedactioncodes": 
+                                                    {
+                                                    },
+                                "affsbonus":    [
+                                                ]
+                            }
+                        ]
+   },
+   {  
+        "accountid":"1793978",
+        "accountname":"",
+        "token":"e9c53989-d1bd-403c-a0af-7dffbe505b92 f70fbf6380ac4d4a8c2f37e022d2f0b0",
+        "campaigns":    [
+                            {  
+                                "campaignid":"df63640c",
+                                "merchantid":"622006",
+                                "merchantname":"Sephora",
+                                "fixedactioncodes": 
+                                                    {
+                                                        "newuser": "16876",
+                                                        "olduser": "16875"
+                                                    },
+                                "affsbonus":    [
+                                                ]
+                            }
+                        ]
+    }
+]

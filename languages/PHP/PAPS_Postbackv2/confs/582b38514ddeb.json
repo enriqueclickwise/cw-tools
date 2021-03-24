@@ -1,0 +1,24 @@
+[  
+   {  
+      "refid": "582b38514ddeb",
+      "user": "Advertisers@eficads.com",
+      "url": "http://perf.af.eficads.com/ts/",
+      "campaigns":  [
+                        {  
+                            "campaignid":"cf5080d8",
+                            "merchantname":"LATAM Argentina",
+                            "urlparams": "i5536475/tsa?typ=s&tst=!!TIME_STAMP!!&trc=default&ctg=venta&sid=reservacion&cid={orderid}&orv={commission}&orc={currency}&cli={extradata}"
+                        },
+                        {  
+                            "campaignid":"50f65ad3",
+                            "merchantname":"Al Mosafer",
+                            "urlparams": "i5036504/tsa?typ=s&tst=!!TIME_STAMP!!&trc=default&ctg=ventas&sid=thankyoupage&cid={orderid}&orv={commission}&orc={currency}&cli={extradata}"
+                        },
+                        {  
+                            "campaignid":"019eb217",
+                            "merchantname":"Expedia",
+                            "urlparams": "i5537465/tsa?typ=s&tst=!!TIME_STAMP!!&trc=default&ctg=venta&sid=&cid={orderid}&orv={commission}&orc={currency}&cli={extradata}"
+                        }
+                    ]
+   }
+]

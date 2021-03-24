@@ -1,0 +1,20 @@
+[  
+   {  
+      "accountid":"",
+      "accountname":"",
+      "token":"NvfJ9sCmBWorx3fVjVTrefwBX8dBDqm5mqF3csuwd4eNb19FvKBR0FTvgLSt",
+      "campaigns":  [
+                        {  
+                            "campaignid":"74a2c292",
+                            "merchantid":"",
+                            "merchantname":"Casa del Libro",
+                            "fixedactioncodes": 
+                                                {
+                                                },
+                            "affsbonus":    [  
+                                            ]
+
+                        }
+                    ]
+   }
+]

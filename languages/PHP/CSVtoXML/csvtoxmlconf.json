@@ -1,0 +1,74 @@
+{ 
+   "campaigns":[ 
+      { 
+         "campaignId":"a36df8af",
+         "merchantName":"Maxmovil",
+         "network": "",
+         "separator":"|",
+         "includedColumns": true,
+         "csvPathName":"csv/Maxmovil.csv",
+         "feedUrl": "",
+         "confName":"cw-confs/Maxmovil.json",
+         "xmlPath":"cw-xml/{$refid}-CW-Maxmovil.xml",
+         "refIds" : ["5d5d6d0f622b2"],
+         "deepLink" : "http://my.pampanetwork.com/scripts/click.php?a_aid={refid}&a_bid=064ce4c2&data1=&desturl={url}",
+         "active": false
+      },
+      { 
+         "campaignId":"097762ce",
+         "merchantName":"DecathlonNL",
+         "network": "AW",
+         "separator":",",
+         "includedColumns": true,
+         "csvPathName":"csv/DecathlonNL.csv",
+         "feedUrl": "",
+         "confName":"cw-confs/DecathlonNL.json",
+         "xmlPath":"cw-xml/{$refid}-CW-Decathlon.xml",
+         "refIds" : ["5cc6c6100c100"],
+         "deepLink" : "http://my.pampanetwork.com/scripts/click.php?a_aid={refid}&a_bid=beba72b3&data1=&desturl=https%3A%2F%2Fdecathlon-nl.x8nb.net%2Fc%2F1231110%2F484843%2F5122%3FsubId1%3D%7B%24refid%7D%26subId2%3D%7B%24extra_data1%7D%26u%3D{url}",
+         "active": false
+      },
+      { 
+         "campaignId":"1d509ac9",
+         "merchantName":"PumaNL",
+         "network": "TD",
+         "separator":"\"|\"",
+         "includedColumns": true,
+         "csvPathName":"csv/PumaNL.csv",
+         "feedUrl": "http://pf.tradedoubler.com/export/export?myFeed=15695033282854292&myFormat=15695033282854292",
+         "confName":"cw-confs/PumaNL.json",
+         "xmlPath":"cw-xml/{$refid}-CW-PumaNL.xml",
+         "refIds" : ["5cc6c6100c100"],
+         "deepLink" : "http://my.pampanetwork.com/scripts/click.php?a_aid={refid}&a_bid=4915c5d5&data1=&desturl={url}epi%28%7B%24refid%7D_%7B%24extra_data1%7D%29",
+         "active": true
+      },
+      { 
+         "campaignId":"fee78c51",
+         "merchantName":"AdidasNL",
+         "network": "PH",
+         "separator":",",
+         "includedColumns": true,
+         "csvPathName":"csv/AdidasNL.csv",
+         "feedUrl": "",
+         "confName":"cw-confs/AdidasNL.json",
+         "xmlPath":"cw-xml/{$refid}-CW-AdidasNL.xml",
+         "refIds" : ["5cc6c6100c100"],
+         "deepLink" : "http://my.pampanetwork.com/scripts/click.php?a_aid={refid}&a_bid=74a80027&data1=&desturl=https%3A%2F%2Fprf.hn%2Fclick%2Fcamref%3A1011l4JV9%2Fpubref%3A%7B%24refid%7D_%7B%24extra_data1%7D%2Fdestination%3A{url}",
+         "active": false
+      },
+      { 
+         "campaignId":"bdb0dbda",
+         "merchantName":"RebookNL",
+         "network": "PH",
+         "separator":",",
+         "includedColumns": true,
+         "csvPathName":"csv/RebookNL.csv",
+         "feedUrl": "",
+         "confName":"cw-confs/RebookNL.json",
+         "xmlPath":"cw-xml/{$refid}-CW-RebookNL.xml",
+         "refIds" : ["5cc6c6100c100"],
+         "deepLink" : "http://my.pampanetwork.com/scripts/click.php?a_aid={refid}&a_bid=bbbbb9ef&data1=&desturl=https%3A%2F%2Fprf.hn%2Fclick%2Fcamref%3A1011l4JKm%2Fpubref%3A%7B%24refid%7D_%7B%24extra_data1%7D%2Fdestination%3A{url}",
+         "active": false
+      }
+   ]
+}
