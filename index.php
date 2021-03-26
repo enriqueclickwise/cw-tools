@@ -2,7 +2,7 @@
   <head></head>  
   <body>
     <?php
-  echo getcwd() . "\n";
+  echo $_SERVER['SERVER_NAME'];
 ?>
   </body>
 </html>
