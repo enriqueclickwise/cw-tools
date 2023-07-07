@@ -85,6 +85,7 @@ Company: Clickwise
                     date = '';
                 }
                 var check = [
+                    orderid,
                     totalcost,
                     commission,
                     affiliate,
@@ -95,6 +96,7 @@ Company: Clickwise
                     tid
                 ];
                 var data = [
+                    'order-id=' + orderid,
                     'total-cost=' + totalcost,
                     'commission=' + commission,
                     'affiliate=' + affiliate,
@@ -104,6 +106,7 @@ Company: Clickwise
                     'extra-data=' + extradata,
                     'tid=' + tid
                 ];
+                checkValue(orderid, '', orderid);
                 checkValue(totalcost, undefined, totalcost);
                 checkValue(commission, undefined, commission);
                 checkValue(affiliate, '', affiliate);
@@ -114,7 +117,7 @@ Company: Clickwise
                 checkValue(tid, '', tid);
                 checkValue(extradata, '', extradata);
                 var params = data.join('&amp;');
-                var url = 'https://r.clickwise.net/t/'+ campaignid +'/'+ actioncode +'/'+ orderid +'?' + params;
+                var url = 'https://r.clickwise.net/t/'+ campaignid +'/'+ actioncode +'?' + params;
                 document.getElementById("textarea").innerHTML = '<textarea class="form-control form-group col-xs-4" id="finalurl">'+ url +'</textarea><button class="btn btn-success" onclick="copyToClipboard()">Copy!</button>';
             }
         </script>
@@ -260,6 +263,7 @@ Company: Clickwise
                             <option value="{currency}" selected="selected">{currency}</option>
                             <option value="USD">United States Dollars</option>
                             <option value="EUR">Euro</option>
+                            <option value="MXN">Mexico Pesos</option>
                             <option value="GBP">United Kingdom Pounds</option>
                             <option value="BRL">Brazil Real</option>
                             <option value="CNY">China Yuan Renmimbi</option>
@@ -305,6 +309,11 @@ Company: Clickwise
                 <dt class="col-sm-2">- {sandbox}</dt>
                 <dd class="col-sm-3">Development flag to avoid tracking wrong transactions. *Optional</dd>
                 <dd>E.g: ...&sandbox=true</dd>
+            </dl>
+            <dl class="row">
+                <dt class="col-sm-2">- {debug}</dt>
+                <dd class="col-sm-3">Development flag to print the conversion's JSON response. *Optional</dd>
+                <dd>E.g: ...&debug=true</dd>
             </dl>
         </div>
         <div class="alert alert-info col-sm-5 col-lg-offset-2">
