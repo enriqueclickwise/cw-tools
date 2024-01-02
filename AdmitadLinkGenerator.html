@@ -1,0 +1,135 @@
+<!-- To make custom Admitad URLs
+
+Author: @emunoz
+Date: 2024-01-01
+Company: Clickwise
+
+-->
+
+<html>
+    <head>
+        <script>
+            // When the user clicks on div, open the popup
+            function PopupShow(popupname) {
+                var popup = document.getElementById(popupname);
+                popup.classList.toggle("show");
+            }
+            function resetForm()
+            {
+                document.getElementById("s2sform").reset();
+            }
+            function copyToClipboard() {
+                var copyText = document.getElementById("finalurl");
+                copyText.select();
+                document.execCommand("copy");
+            }
+            function createUrl()
+            {
+                var admitadurl = document.getElementById("AdmitadURL").value;
+                admitadurl = admitadurl.replace('/g/', '/tptv2/');
+                admitadurl = encodeURIComponent(admitadurl);
+                var data = [
+                    '&subid={$refid}',
+                    'subid1={$extra_data1}',
+                    'subid2={$tid}'
+                ];
+                var params = data.join('&amp;');
+                var url = 'https://script.clickwise.net/sale.php?campaign-id=amt&u='+ admitadurl + params;
+                document.getElementById("textarea").innerHTML = '<textarea class="form-control form-group col-xs-4" id="finalurl">'+ url +'</textarea><button class="btn btn-success" onclick="copyToClipboard()">Copy!</button>';
+            }
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .info-badge{
+                background-color: #32C3CF;
+            }
+            .warning-badge{
+                background-color: #FF0000;
+            }
+            /* Popup container - can be anything you want */
+            .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+
+            /* The actual popup */
+            .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            }
+
+            /* Popup arrow */
+            .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+            }
+
+            /* Toggle this class - hide and show the popup */
+            .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            }
+
+            /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+            }
+
+            @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>MAKE YOUR OWN ADMITAD URL</h1>
+            <br><br><br>
+            <form id="s2sform" class="form-group col-xs-12">
+                <div class = "form-group col-xs-12 col-lg-offset-3">
+                    <div class="form-group col-xs-6">
+                        <label>Admitad URL:</label>
+                        <div class="popup" onclick="PopupShow('myPopup1')">
+                            <span class="badge warning-badge">!</span>
+                            <span class="popuptext" id="myPopup1">This param is required and must be filled with some value</span>
+                        </div>
+                        <input class="form-control" id="AdmitadURL" value="https://www.AdmitadURL/g/asdasdasdasdads">
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <button class="btn btn-primary" onclick="createUrl()">Make URL</button>
+                <button class="btn btn-warning" onclick="resetForm()">Reset form</button>
+            </div>
+            <br><br>
+            <div class="row">
+                <span class = "col-md-offset-2 col-xs-8" id = 'textarea'></span>
+            </div>
+            <img src="https://www.clickwise.net/img/logoslider.png" />
+        </div>
+    </body>
+</html>
+
