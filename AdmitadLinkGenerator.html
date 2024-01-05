@@ -35,31 +35,67 @@ Company: Clickwise
                 var admitadurl = document.getElementById("AdmitadURL").value;
                 var admitadDeeplink = document.getElementById("AdmitadDeeplink").value;
                 var admitadDeeplinkcheckbox = document.getElementById("AdmitadDeeplinkCheckBox").checked;
-                var subid = '{$refid}'
-                var subid1 = '{$extra_data1}'
-                var subid2 = '{$tid}'
+                var office = document.getElementById("Office").value;
                 admitadurl = admitadurl.replace('/g/', '/tptv2/');
                 admitadurl = encodeURIComponent(admitadurl);
                 admitadDeeplink = encodeURIComponent(admitadDeeplink)
+                if(admitadurl == ''){
+                        alert('You must enter a valid URL!');
+                        exit()
+                    }
                 if(admitadDeeplinkcheckbox == true){
                     admitadDeeplink = '';
                 }
-                var check = [
-                    subid,
-                    subid1,
-                    subid2,
-                    admitadDeeplink
-                ];
-                var data = [
-                    '&subid=' + subid,
-                    'subid1=' + subid1,
-                    'subid2=' + subid2,
-                    'ulp=' + admitadDeeplink
-                ];
-                checkValue(subid, '', subid);
-                checkValue(subid1, '', subid1);
-                checkValue(subid2, '', subid2);
-                checkValue(admitadDeeplink, '', admitadDeeplink);
+                if(office == 'Madrid'){
+                    var subid = '{$refid}'
+                    var subid1 = '{$extra_data1}'
+                    var subid2 = '{$tid}'
+                    var check = [
+                        subid,
+                        subid1,
+                        subid2,
+                        admitadDeeplink
+                    ];
+                    var data = [
+                        '&subid=' + subid,
+                        'subid1=' + subid1,
+                        'subid2=' + subid2,
+                        'ulp=' + admitadDeeplink
+                    ];
+                    checkValue(subid, '', subid);
+                    checkValue(subid1, '', subid1);
+                    checkValue(subid2, '', subid2);
+                    checkValue(admitadDeeplink, '', admitadDeeplink);
+                }
+                else{
+                    if(office == '{office}'){
+                        alert('You must select an office!');
+                        exit()
+                    }
+                    var subid = '{$campaign}'
+                    var subid1 = '{$refid}'
+                    var subid2 = '{$tid}'
+                    var subid3 = '{$extra_data1}'
+                    var check = [
+                        subid,
+                        subid1,
+                        subid2,
+                        subid3,
+                        admitadDeeplink
+                    ];
+                    var data = [
+                        '&subid=' + subid,
+                        'subid1=' + subid1,
+                        'subid2=' + subid2,
+                        'subid3=' + subid3,
+                        'ulp=' + admitadDeeplink
+                    ];
+                    checkValue(subid, '', subid);
+                    checkValue(subid1, '', subid1);
+                    checkValue(subid2, '', subid2);
+                    checkValue(subid3, '', subid3);
+                    checkValue(admitadDeeplink, '', admitadDeeplink);
+                }
                 var params = data.join('&amp;');
                 var url = 'https://script.clickwise.net/sale.php?campaign-id=amt&u='+ admitadurl + params;
                 document.getElementById("textarea").innerHTML = '<textarea class="form-control form-group col-xs-4" id="finalurl">'+ url +'</textarea><button class="btn btn-success" onclick="copyToClipboard()">Copy!</button>';
@@ -149,14 +185,26 @@ Company: Clickwise
                 <div class = "form-group col-xs-12 col-lg-offset-3">
                     <div class="form-group col-xs-6">
                         <label>Admitad Deeplink:</label>
-                        <div class="popup" onclick="PopupShow('myPopup6')">
+                        <div class="popup" onclick="PopupShow('myPopup2')">
                             <span class="badge info-badge">?</span>
-                            <span class="popuptext" id="myPopup6">Unencoded URL to append to link</span>
+                            <span class="popuptext" id="myPopup2">Unencoded URL to append to link</span>
                         </div>
                         <input class="form-check-input" type="checkbox" value="" id="AdmitadDeeplinkCheckBox" checked>
                         <label class="form-check-label">Remove from URL</label>
                         <input class="form-control" id="AdmitadDeeplink" placeholder="&ulp=https%3A%2F%2Fwww.example.com" value="https://www.example.com">
                     </div>
+                </div>
+                <div class="form-group col-xs-6 col-lg-offset-3">
+                    <label>Office:</label>
+                    <div class="popup" onclick="PopupShow('myPopup3')">
+                        <span class="badge info-badge">?</span>
+                        <span class="popuptext" id="myPopup3">It changes the requested params by office. Choose wisely!<br></span>
+                    </div>
+                    <select class="form-control" id="Office">
+                        <option value="{office}" selected="selected">{office}</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="MENA">MENA</option>
+                    </select>
                 </div>
             </form>
             <br><br>
